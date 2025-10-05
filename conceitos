@@ -30,15 +30,13 @@ Sua tarefa é retornar a **descrição correspondente** ao conceito informado. A
 
 ## 📊 Exemplos
 
-| **Entrada**       | **Saída Esperada**                                           |
-|-------------------|-------------------------------------------------------------|
-| Autenticação       | Verificação da identidade de um usuário                     |
-| MFA                | Verificação usando múltiplos fatores de segurança           |
+EntradaSaída EsperadaAutenticaçãoVerificação da identidade de um usuário| MFA                | Verificação usando múltiplos fatores de segurança           |
 | OAuth              | Padrão aberto para delegar acesso sem compartilhar senha    |
 | Autorização        | Permissão para acessar recursos específicos                 |
 
 ---
 
+## 🧪 Código
 
 
 entrada = input()
