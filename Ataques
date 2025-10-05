@@ -1,0 +1,64 @@
+# 🛡️ Desafio: Tipos de Ataques Cibernéticos
+
+## 📘 Descrição
+
+Proteger sistemas envolve conhecer os tipos mais comuns de ataques.  
+Neste desafio, você deverá **associar os nomes de ataques cibernéticos às suas descrições corretas**, reforçando sua familiaridade com esses conceitos.
+
+---
+
+## 📝 Entrada
+
+A entrada consistirá no nome de um tipo de ataque, e você deverá retornar a descrição correspondente.  
+Conceitos válidos:
+
+- `Phishing`
+- `DDoS`
+- `Malware`
+- `Engenharia Social`
+
+---
+
+## 🎯 Saída
+
+A saída esperada é a **descrição correspondente** ao conceito fornecido.  
+Possíveis descrições:
+
+- `Enganar usuários para roubar informações sensíveis`
+- `Atacar um serviço com muitos acessos para derrubá-lo`
+- `Software malicioso projetado para causar danos`
+- `Manipulação psicológica para obter acesso ou dados`
+
+---
+
+## 📊 Exemplos
+
+| **Entrada**       | **Saída Esperada**                                           |
+|-------------------|-------------------------------------------------------------|
+| Phishing           | Enganar usuários para roubar informações sensíveis          |
+| DDoS               | Atacar um serviço com muitos acessos para derrubá-lo        |
+| Malware            | Software malicioso projetado para causar danos              |
+
+---
+## 🧪 Código
+
+
+entrada = input()
+
+def descrever_ataque(ataque):
+  if ataque == "Phishing":
+    return "Enganar usuários para roubar informações sensíveis"
+  
+  elif ataque == "DDoS":
+    return "Atacar um serviço com muitos acessos para derrubá-lo"
+
+  elif ataque == "Malware":
+    return "Software malicioso projetado para causar danos"
+
+  elif ataque == "Engenharia Social":
+    return "Manipulação psicológica para obter acesso ou dados"
+
+  else:
+    return "Conceito inválido"
+
+print(descrever_ataque(entrada))
