@@ -1,0 +1,62 @@
+# 💡 Desafio: Conceitos de Cibersegurança
+
+Na área de **cibersegurança**, é essencial compreender os conceitos de **autenticação** e **autorização**, pois eles são fundamentais para proteger dados e controlar o acesso a sistemas.
+
+Neste desafio, você deve **associar corretamente cada conceito à sua definição**.
+
+---
+
+## 📝 Entrada
+
+Você receberá o nome de um dos seguintes conceitos:
+
+- `Autenticação`
+- `Autorização`
+- `MFA`
+- `OAuth`
+
+---
+
+## 🎯 Saída
+
+Sua tarefa é retornar a **descrição correspondente** ao conceito informado. As descrições possíveis são:
+
+- `Verificação da identidade de um usuário`
+- `Permissão para acessar recursos específicos`
+- `Verificação usando múltiplos fatores de segurança`
+- `Padrão aberto para delegar acesso sem compartilhar senha`
+
+---
+
+## 📊 Exemplos
+
+| **Entrada**       | **Saída Esperada**                                           |
+|-------------------|-------------------------------------------------------------|
+| Autenticação       | Verificação da identidade de um usuário                     |
+| MFA                | Verificação usando múltiplos fatores de segurança           |
+| OAuth              | Padrão aberto para delegar acesso sem compartilhar senha    |
+| Autorização        | Permissão para acessar recursos específicos                 |
+
+---
+
+
+
+entrada = input()
+
+def descrever_conceito(conceito):
+  if conceito == "Autenticação":
+    return "Verificação da identidade de um usuário"
+  
+  elif conceito == "Autorização":
+    return "Permissão para acessar recursos específicos"
+
+  elif conceito == "MFA":
+    return "Verificação usando múltiplos fatores de segurança"
+
+  elif conceito == "OAuth":
+    return "Padrão aberto para delegar acesso sem compartilhar senha"
+
+  else:
+    return "Conceito inválido"
+
+print(descrever_conceito(entrada))
